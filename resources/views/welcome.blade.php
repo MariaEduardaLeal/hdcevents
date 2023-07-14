@@ -5,19 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-
-        <!-- Styles -->
-        <style>
-
-        </style>
+        <!-- Como referenciar algo da pasta public-->
+        <link rel="stylesheet" href="/CSS/style.css">
+        <script src="/js/script.js"></script>
     </head>
     <body class="antialiased">
         <h1>Olá Mundo</h1>
-
+        <img src="/img/Auditorio.04.jpg" alt="">
         <!--Fazendo if no html com o auxilio do blade, sem precisar abrir uma tag php-->
                 @if(10 > 15)
                  <p>A condição é true</p>
