@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
-        <!-- Como referenciar algo da pasta public-->
-        <link rel="stylesheet" href="/CSS/style.css">
-        <script src="/js/script.js"></script>
-    </head>
-<body>
+<!--Estamos dizendo que esse arquivo está extendendo do arquivo main que está na pasta layouts-->
+@extends('layouts.main')
+<!-- Aqui abrimos a seção para dar o título da página-->
+@section('title', 'Produtos')
+<!--Aqui estamos abrindo a seção para o content, no caso para todo o conteúdo que estará na nossa página
+e em baixo é necessário fechar nossa seção content-->
+@section('content')
 <h1>Está é a página onde ficaram os produtos</h1>
-</body>
-</html>
+<!--Fechando a seção content-->
+@endsection
